@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app {
   display: flex;
   flex-direction: column;
+  height: 100vh; /* Ensure the app takes full height of the viewport */
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  height: 80px;
+  background-color: Teal ;
+  color: #fff;
+  /* padding: 20px; */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  /* width: 100%; */
+  background-color:Gray;
+  display: flex;
+justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar nav {
+  padding-top: 20px;
 }
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.horizontal ul {
+  flex-direction: row; /* For horizontal layout */
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.sidebar li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.content{
+  width: 100%;
+}
+
+/* @media screen and (min-width: 768px) {
+  .sidebar {
+    display: block;
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px);
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    margin-left: 250px;
+  }
+
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar.horizontal {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    .sidebar.horizontal ul {
+      flex-direction: column;
+    }
+  }
+} */
