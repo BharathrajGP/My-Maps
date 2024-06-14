@@ -15,7 +15,7 @@ function App() {
           <div className="content">
             {/* Content goes here */}
             <Routes>
-              <Route path="/" element={<DashBoard />} />
+              <Route path="/My-Maps/" element={<DashBoard />} />
 
               <Route path="/Google/DrawingPolygons" element={<DrawingPolygons />} />
               <Route path="/Google/DrawingPolygonWithFillPattern" element={<DrawingPolygonWithFillPattern />} />

@@ -75,7 +75,7 @@ const DrawingPolygons = () => {
             <li key={index}>{`Lat: ${path.lat}, Lng: ${path.lng}`}</li>
           ))}
         </ul> */}
-        <button onClick={handleSaveClick}>Save</button>
+        <button onClick={handleSaveClick}>Get Co-ordinates</button>
       </div>
     </div>
   );

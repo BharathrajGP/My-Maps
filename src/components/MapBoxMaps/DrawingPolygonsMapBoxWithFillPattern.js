@@ -101,7 +101,7 @@ const DrawingPolygonsMapBoxWithFillPattern = () => {
   return (
     <div>
       <div ref={mapContainerRef} style={{ height: '400px', width: '100%' }} />
-      <button onClick={handleSaveClick}>Save</button>
+      <button onClick={handleSaveClick}>Get Co-ordinates</button>
       <button onClick={handleErase}>Cancel</button>
     </div>
   );

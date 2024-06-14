@@ -35,7 +35,7 @@ const Sidebar = () => {
         <aside className="sidebar">
             <nav>
                 <ul>
-                    <li onClick={() => handleItemClick('DashBoard')} style={{ color: expandedItem === 'Google' ? 'orange' : 'white' }}><Link to={"/"} style={{ color: isLinkActive('/') ? 'orange' : 'white', textDecoration: "none" }}>DashBoard</Link></li>
+                    <li onClick={() => handleItemClick('DashBoard')} style={{ color: expandedItem === 'Google' ? 'orange' : 'white' }}><Link to={"/My-Maps"} style={{ color: isLinkActive('/My-Maps') ? 'orange' : 'white', textDecoration: "none" }}>DashBoard</Link></li>
                     <li onClick={() => handleItemClick('Google')} style={{ color: expandedItem === 'Google' ? 'orange' : 'white' }}>
                         Google
                         {isItemExpanded('Google') && (

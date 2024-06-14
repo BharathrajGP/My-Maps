@@ -78,7 +78,7 @@ const DrawingPolygonsMapBox = () => {
   return (
     <div>
       <div ref={mapContainerRef} style={{ height: '400px', width: '100%' }} />
-      <button onClick={handleSaveClick}>Save</button>
+      <button onClick={handleSaveClick}>Get Co-ordinates</button>
     </div>
   );
 };

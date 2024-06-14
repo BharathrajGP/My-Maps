@@ -89,7 +89,6 @@ const IndoorMapBoxMapWithMarkerBoundWithCoordinates = () => {
   return (
     <div>
       <div ref={mapContainerRef} style={{ height: '400px', width: '100%' }} />
-      <button onClick={() => console.log('Polygon Vertices:', initialMarkers)}>Save</button>
     </div>
   );
 };

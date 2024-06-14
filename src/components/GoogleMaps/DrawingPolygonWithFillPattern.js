@@ -103,7 +103,7 @@ const DrawingPolygonWithFillPattern = () => {
                 </GoogleMap>
             )}
             <div>
-                <button onClick={handleSaveClick}>Save</button>
+                <button onClick={handleSaveClick}>Get Co-ordinates</button>
             </div>
         </div>
     );
